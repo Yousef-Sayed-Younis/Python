@@ -1,0 +1,111 @@
+import turtle
+
+window = turtle.Screen()
+turtle.speed(0)
+turtle.hideturtle()
+turtle.bgcolor('black')
+
+turtle.up()
+turtle.goto(0, -100)
+turtle.color('AliceBlue')
+turtle.begin_fill()
+turtle.circle(200)
+turtle.end_fill()
+
+turtle.up()
+turtle.goto(100, -50)
+turtle.color('black')
+turtle.begin_fill()
+turtle.circle(200)
+turtle.end_fill()
+
+turtle.color('DarkOrange')
+turtle.goto(135, -46)
+
+turtle.right(60)
+turtle.begin_fill()
+turtle.forward(30)
+turtle.right(120)
+turtle.forward(30)
+turtle.right(120)
+turtle.forward(30)
+turtle.end_fill()
+
+turtle.right(150)
+turtle.forward(25.9)
+turtle.begin_fill()
+turtle.right(90)
+turtle.forward(10)
+turtle.left(90)
+turtle.forward(40)
+turtle.left(90)
+turtle.forward(20)
+turtle.left(90)
+turtle.forward(40)
+turtle.end_fill()
+
+turtle.left(90)
+turtle.color('gold1')
+turtle.pendown()
+turtle.pensize(3)
+turtle.forward(20)
+turtle.penup()
+
+turtle.left(90)
+turtle.forward(40)
+turtle.right(30)
+
+turtle.begin_fill()
+turtle.forward(10)
+turtle.left(120)
+turtle.forward(30)
+turtle.left(120)
+turtle.forward(10)
+turtle.end_fill()
+
+turtle.left(60)
+turtle.forward(4)
+turtle.right(90)
+turtle.forward(4)
+
+turtle.color('yellow')
+turtle.begin_fill()
+turtle.forward(32)
+turtle.left(90)
+turtle.forward(5)
+turtle.left(90)
+turtle.forward(32)
+turtle.left(90)
+turtle.forward(5)
+turtle.end_fill()
+
+turtle.right(180)
+turtle.forward(7)
+
+turtle.begin_fill()
+turtle.forward(5)
+turtle.right(90)
+turtle.forward(32)
+turtle.right(90)
+turtle.forward(5)
+turtle.right(90)
+turtle.forward(32)
+turtle.end_fill()
+
+turtle.up
+turtle.goto(-70, -20)
+turtle.down()
+turtle.color('black')
+c = 0
+d = 0
+for x in range(27):
+    for i in range(5):
+        turtle.forward(27)
+        turtle.color('yellow')
+        turtle.forward(3)
+        turtle.right(60)
+        turtle.color('black')
+    turtle.right(15)
+    turtle.right(60)
+
+window.mainloop()
