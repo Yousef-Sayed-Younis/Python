@@ -15,12 +15,12 @@ class Math:
         return x / y 
 
     @staticmethod
-    def subs(x, y):
+    def sub(x, y):
         return x - y
 
 addition = Math.add(5, 10)
 multiplication = Math.multi(5, 10)
 diversion = Math.dive(10, 5)
-substract = Math.subs(10, 5)
+subtract = Math.sub(10, 5)
 
-print(addition, multiplication, diversion, substract)
+print(addition, multiplication, diversion, subtract)

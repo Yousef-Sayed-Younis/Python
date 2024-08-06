@@ -19,7 +19,7 @@ class Man(Person):
         Man.NO_men += 1
 
 
-    # Dunder Method
+    # Dander Method
     def __lt__(self, other):
         return self.age < other.age
 
@@ -32,17 +32,17 @@ class Man(Person):
     # Polymorphism
     def display(self):
         # Over Writing
-        strig = super().display()
-        return f'{strig} and voice is {self.voice} and gender is {self.gender}'
+        string = super().display()
+        return f'{string} and voice is {self.voice} and gender is {self.gender}'
 
 
 man = Man("Yousef", 20, 'Thick')
 man1 = Man("Ahmed", 30)
 
-# print(man.display())
-# print(Man.NO_men)
+print(man.display())
+print(Man.NO_men)
 
 print(man < man1)
 print(man + man1)
 
-# print(dir(Man))
+print(dir(Man))

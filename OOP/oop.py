@@ -5,8 +5,7 @@ class Student: # Capital Letter For Any Name Of Class
     NO_students = 0
     # Can Make Only One __init__ In The Class
     def __init__(self, name, age = None, courses = None): # Self Is Must Be In The First
-        # Instance Attribute
-        # Private Attribute
+        # Instance Attribute / Private Attribute
         self.name = name
         self.age = age
         self.courses = courses
@@ -21,8 +20,8 @@ class Student: # Capital Letter For Any Name Of Class
         self.name = new_name
 
     # Instance Methods
-    # Should Have self To Access Informations
-    def descibe(self):
+    # Should Have self To Access Information
+    def describe(self):
         print(f'My name is {self.name} and my age is {self.age}.')
 
     def is_old(self, num):
@@ -44,11 +43,11 @@ class Pizza:
 
     @classmethod
     def veg(cls):
-        return cls(['Mashrooms', 'Olives', 'Onions'])
+        return cls(['Mushrooms', 'Olives', 'Onions'])
 
     @classmethod
     def margherita(cls):
-        return cls(['Mozarella', 'Sauce'])
+        return cls(['Mozzarella', 'Sauce'])
 
     def area(self):
         return Pizza.circle_area(self.radius)
@@ -61,11 +60,12 @@ class Pizza:
     def __str__(self):
         return f'Pizza ingredients are {self.ingredients}'
 
-# pizza1 = Pizza(['Tomatoes', 'Olives'])
-# pizza2 = Pizza.veg()
-# pizza3 = Pizza.margherita()
 
-# print(pizza2, pizza3)
+pizza1 = Pizza(['Tomatoes', 'Olives'])
+pizza2 = Pizza.veg()
+pizza3 = Pizza.margherita()
+
+print(pizza2, pizza3)
 
 pizza = Pizza(5)
 
